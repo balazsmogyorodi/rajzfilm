@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life With Louie</title>
+</head>
+
+<body>
+    <main class="ur">
+        <header>
+            <img src="Life_with_Louie.jpg" alt="" class="fedo">
+
+        </header>
+        <article>
+            <form action="#" method="post" validate oninput="csuszka.value=parseInt(ertekeles.value)">
+                <fieldset id="keret">
+                    <legend>Saját adataid</legend>
+                    <div class="sor">
+                        <label for="nev">Add meg a nevedet</label>
+                        <br>
+                        <input type="text" id="veznev" name="nev" placeholder="Vezetéknév" required>
+                        <input type="text" id="kernev" name="nev" placeholder="Keresztnév" required>
+                    </div>
+                    <div class="sor">
+                        <label for="mail">Add meg az e-mail címedet</label>
+                        <br>
+                        <input type="email" id="mail" name="mail" placeholder="nev@valami.hu" required>
+                    </div>
+                </fieldset>
+
+                <fieldset id="keret2">
+                    <legend>Értékelés</legend>
+                    <div class="sor">
+                        <label for="szereplok">Szereplő</label>
+                        <div id="szereplok">
+                            <select name="szereplok" id="szereplok">
+                                <option value="Louie Anderson">Louie Anderson</option>
+                                <option value="Andy Anderson">Andy Anderson</option>
+                                <option value="Ora Anderson">Ora Anderson</option>
+                                <option value="Tommy Anderson">Tommy Anderson</option>
+                                <option value="Mike Grunewald">Mike Grunewald</option>
+                                <option value="Jeannie Harper">Jeannie Harper</option>
+                                <option value="Glen Glenn">Glen Glenn</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="sor">
+                        <label for="ertekeles">Sorozat értékelése</label>
+                        <br>
+                        <input type="range" id="ertekeles" name="ertekeles" min="1" max="5" value="3">
+                        <br>
+                        <output name="csuszka" id="ertek">3</output>
+                    </div>
+                    <div class="sorVelemeny">
+                        <label for="velemeny">Mi a véleményed?</label>
+                        <br>
+                        <textarea name="velemeny" id="velemeny" cols="30" rows="10" placeholder="Az én véleményem..."></textarea>
+                    </div>
+                </fieldset>
+                <input type="submit" id="kulldes" name="kulldes" class="kuldes" value="küldés">
+                <input type="reset" value="reset">
+            </form>
+        </article>
+        
+        <nav>
+            <ul>
+                <li> <a href="index.html"> Főoldal </a></li>
+                <li> <a href="szulok.html"> Családja </a></li>
+                <li> <a href="baratok.html"> Barátai </a></li>
+                <li> <a href="urlap.html"> űrlap</a></li>
+            </ul>
+        </nav>
+
+        <footer>
+            <h3> Készitő: Mogyoródi Balázs</h3>
+
+
+        </footer>
+
+      
+
+
+
+
+        </form>
+
+    </main>
+</body>
+
+</html>
